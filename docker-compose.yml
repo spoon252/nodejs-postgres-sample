@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgresdb
+    restart: always
+    environment:
+      POSTGRES_USER: root_user
+      POSTGRES_PASSWORD: root_user_pw
+      POSTGRES_DB: nodejs_sample_db
+    ports:
+      - '5432:5432'
